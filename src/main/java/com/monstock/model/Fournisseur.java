@@ -9,6 +9,7 @@ public class Fournisseur {
     private String nom;
     @JsonProperty("telephone")
     private String telephone;
+
     public String getCode() {
         return code;
     }

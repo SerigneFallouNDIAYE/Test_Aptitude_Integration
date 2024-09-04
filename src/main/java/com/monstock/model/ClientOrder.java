@@ -16,6 +16,7 @@ public class ClientOrder {
     @JsonProperty("contenu")
     private Contenu contenu;
 
+
     public int getId() {
         return id;
     }
@@ -55,6 +56,7 @@ public class ClientOrder {
     public void setContenu(Contenu contenu) {
         this.contenu = contenu;
     }
+
 
 
 }

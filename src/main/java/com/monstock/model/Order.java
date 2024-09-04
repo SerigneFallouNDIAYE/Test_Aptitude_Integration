@@ -32,6 +32,7 @@ public class Order {
     private String contactName;
     @JsonProperty("items")
     private List<OrderItem> items;
+
     public int getId() {
         return id;
     }

@@ -26,6 +26,7 @@ public class Contenu {
     private String dateReception;
     @JsonProperty("lignes")
     private List<Ligne> lignes;
+
     public int getId() {
         return id;
     }
@@ -50,6 +51,11 @@ public class Contenu {
     public List<Ligne> getLignes() {
         return lignes;
     }
+
+
+
+
+
 
 
 }
