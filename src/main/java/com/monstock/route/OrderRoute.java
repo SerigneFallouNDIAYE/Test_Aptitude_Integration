@@ -29,7 +29,7 @@ public class OrderRoute extends RouteBuilder {
                     exchange.setProperty("orderId", order.getId());
                     exchange.setProperty("orderDate", order.getDateOrder());
                 })
-                ;
+        ;
         from("direct:Mapper")
                 .routeId("Mapper")
                 .log("Traitement de la commande principale: ${exchangeProperty.orderId} à la date: ${exchangeProperty.orderDate}")
@@ -41,5 +41,6 @@ public class OrderRoute extends RouteBuilder {
                 .split().body()
                 .marshal().json()
                 .to("https://montest.com/api/produits");
+
     }
 }

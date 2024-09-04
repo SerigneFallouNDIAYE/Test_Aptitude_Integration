@@ -30,6 +30,7 @@ public class Ligne {
     @JsonProperty("categorie")
     private String categorie;
 
+
     public String getId() {
         return id;
     }

@@ -9,6 +9,7 @@ public class SiteReception {
     private String nomSite;
     @JsonProperty("telephone")
     private String telephone;
+
     public int getSiteId() {
         return siteId;
     }
